@@ -1,0 +1,50 @@
+/* Options possible avec @ dans ce cas  */
+@font-face{
+    font-family: Roboto;
+    font-weight: 400;
+    src: url(../font/Roboto-Regular.ttf) format('ttf');
+}
+/* Pour utiliser la police que j'ai téléchargé
+l'écrire ci-dessous "Roboto" */
+html{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: rgb(32, 32, 32);
+}
+body{
+    margin: 0 auto;
+    max-width: 1024px;
+}
+/* Les éléments média ne doivent pas déborder */
+img, video, object, embed{
+    max-width: 100%;
+}
+
+header{
+    background-color: #31ff56;
+    font-size: 24px;
+    padding: 16px;
+}
+/* "header > :first-child" le 1er enfant de header */
+header > :first-child{
+    margin-top: 0;
+}
+header > :last-child{
+    margin-bottom: 0;
+}
+article{
+    border: solid 5px #202034;
+}
+/* .product figure, .product p{
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+} */
+.product figure, .product p{
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+}
+.product figure{
+    margin: 0;
+    text-align: center;
+}
