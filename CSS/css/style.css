@@ -39,10 +39,20 @@ article{
     vertical-align: top;
     width: 45%;
 } */
-.product figure, .product p{
+/* .product figure, .product p{
     display: table-cell;
     vertical-align: top;
     width: 50%;
+} */
+.product{
+    display: flex;
+    flex-flow: row wrap;
+}
+.product h3{
+    flex-basis: 100%;
+}
+.product figure, .product p{
+    flex-basis: 50%;
 }
 .product figure{
     margin: 0;
