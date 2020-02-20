@@ -1,0 +1,20 @@
+/* Options possible avec @ dans ce cas  */
+@font-face{
+    font-family: Roboto;
+    font-weight: 400;
+    src: url(../font/Roboto-Regular.ttf) format('ttf');
+}
+/* Pour utiliser la police que j'ai téléchargé
+l'écrire ci-dessous "Roboto" */
+html{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: rgb(32, 32, 32);
+}
+body{
+    margin: 0 auto;
+    max-width: 1024px;
+}
+/* Les éléments média ne doivent pas déborder */
+img, video, object, embed{
+    max-width: 100%;
+}

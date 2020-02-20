@@ -1,0 +1,12 @@
+header{
+    background-color: #31ff56;
+    font-size: 24px;
+    padding: 16px;
+}
+/* "header > :first-child" le 1er enfant de header */
+header > :first-child{
+    margin-top: 0;
+}
+header > :last-child{
+    margin-bottom: 0;
+}
