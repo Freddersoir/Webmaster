@@ -1,5 +1,6 @@
 .menu{
     display: flex;
+    flex-flow: row wrap;
     background-color: rgb(32, 32, 32);
     color: rgb(224,224,224);
     position: sticky;
@@ -7,6 +8,7 @@
 }
 .menu > div{
     position: relative;
+    flex: 0 0 100%;
 }
 .menu button{
     border: none;
@@ -63,4 +65,15 @@
 .menu a:hover{
     background-color: rgb(96, 96, 96);
     text-decoration: underline;
+}
+@media (min-width: 768px){
+    .menu > div{
+        flex: 1 0 auto;
+    }
+}
+
+@media (min-width: 1196px){
+    .menu > div{
+        flex: 0 0 auto;
+    }
 }
