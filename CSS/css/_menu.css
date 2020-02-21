@@ -50,6 +50,7 @@
     visibility: hidden;
     opacity: 0; 
     transition: opacity 1200ms ease;
+    z-index: 50;
 }
 .menu :hover ul{
     visibility: visible;
